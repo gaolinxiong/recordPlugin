@@ -1,0 +1,14 @@
+{
+  "name": "recordplugin",
+  "version": "1.0.0",
+  "description": "webpack小插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack小插件"
+  ],
+  "author": "高益力",
+  "license": "ISC"
+}
