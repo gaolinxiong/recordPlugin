@@ -8,7 +8,7 @@ recordPlugin.prototype.apply = function(compiler) {
 
     console.log('开始执行插件')
 
-    compiler.hooks.compile.tap('MyExample', () => {
+    compiler.hooks.compile.tap('recordPlugin', () => {
         startTime = new Date().getTime();
     })
 
@@ -33,7 +33,7 @@ recordPlugin.prototype.apply = function(compiler) {
         cb();
     })
 
-    compiler.hooks.done.tap('MyExample', () => {
+    compiler.hooks.done.tap('recordPlugin', () => {
         let duration = new Date().getTime() - startTime;
         console.log('打包时长==>', `${(duration / 1000)}s`)
         console.log('打包完成......')
